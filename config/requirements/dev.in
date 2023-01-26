@@ -1,0 +1,5 @@
+-r base.in
+
+django-silk==5.0.1
+ipdb==0.13.9
+ipython==8.5.0
