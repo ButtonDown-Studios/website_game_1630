@@ -3,10 +3,14 @@
 {% load static %}
 
 {% block page %}
-
     <h1>some stuff</h1>
 
-    <div>Registration closes in <span id="time">05:00</span> minutes!</div>
+    <input type="hidden" id="datetime_site_goes_live_at" name="variable" value="{{ datetime_site_goes_live_at|date:"Y, m, d, H, i, s" }}">
+
+
+    <span id="days-left"></span>
+    <span id="hours-left"></span>
+    <span id="minutes-left"></span>
 
 
 {#    <iframe width="1440" height="652" src="https://www.youtube.com/embed/vmbEyrHarnY" title="1630 -  Thirty Years War Prototype Footage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>#}
