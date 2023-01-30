@@ -1,9 +1,198 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root {
-  --primary-font: 'Roboto', sans-serif;
-  --primary: #135CC9;
-  --secondary: rgba(31, 31, 31, 0.6);
-  --text-primary: rgba(0, 0, 0, 1)
+	--primary-font: 'Roboto', sans-serif;
+	--primary: #135cc9;
+	--secondary: rgba(31, 31, 31, 0.6);
+	--text-primary: rgba(0, 0, 0, 1);
 }
-body{font-family:var(--primary-font);margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;color:var(--primary)}p{font-size:1rem;font-weight:400}.btn{padding:0.75rem;font-size:1rem;-webkit-transition:0.3s all;transition:0.3s all;border:3px solid var(--primary) !important;border-radius:90px;-webkit-box-shadow:none !important;box-shadow:none !important;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#fff;width:12.5rem;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-decoration:none}.btn svg{margin-right:0.75rem}.btn.btn-primary{background:var(--primary)}.btn.btn-secondary{background:transparent}.btn:hover{opacity:0.8}.about .banner{background-image:url("/static/app/assets/images/banner.png");background-repeat:no-repeat;background-size:cover}.about .banner .nav-bar{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:2.5rem 4.375rem}.about .banner .nav-bar .logo{margin-right:6.875rem}.about .banner .nav-bar ul{list-style:none;display:-webkit-box;display:-ms-flexbox;display:flex;margin:0;padding:0}.about .banner .nav-bar ul li:not(:last-child){margin-right:3.5rem}.about .banner .nav-bar ul li a{text-decoration:none;font-size:1.25rem;font-weight:500;color:#fff}.about .banner .nav-bar ul li a.active{color:var(--primary)}.about .banner .content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:2.5rem}.about .banner .content h1{color:#fff;font-weight:800;font-size:3rem;text-shadow:0px 5px 6px rgba(0,0,0,0.26)}.about .banner .content p{color:#fff;text-align:center;line-height:28px}.about .banner .content p span{display:block}.about .banner .content a.btn{margin:2.5rem 0 3.75rem 0;text-decoration:none}.about .banner .content form{margin-bottom:7.5rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.about .banner .content form .form-group{margin-bottom:1.5rem;width:43.75rem}.about .banner .content form .form-group .form-control{padding:0.875rem 2rem;width:100%;border-radius:40px;background-color:#fff;-webkit-box-shadow:0px 4px 4px rgba(0,0,0,0.25);box-shadow:0px 4px 4px rgba(0,0,0,0.25);font-size:14px;color:var(--secondary);border:0;outline:none}.about .banner .content form .form-group .form-control::-webkit-input-placeholder{text-align:center}.about .banner .content form .form-group .form-control:-ms-input-placeholder{text-align:center}.about .banner .content form .form-group .form-control::-ms-input-placeholder{text-align:center}.about .banner .content form .form-group .form-control::placeholder{text-align:center}.about .kick-starter{margin:3.125rem 10rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.about .kick-starter p{color:var(--text-primary);font-size:1.125rem;text-align:center}.about .kick-starter p span{display:block;margin:1.75rem 0}.about .kick-starter .video-wrapper{margin:4rem 0 2.5rem 0;height:26.25rem;width:100%;border:1px solid}.about .kick-starter .video-wrapper video{height:100%;width:100%}
+body {
+	font-family: var(--primary-font);
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: var(--primary);
+}
+p {
+	font-size: 1rem;
+	font-weight: 400;
+}
+.btn {
+	padding: 0.75rem;
+	font-size: 1rem;
+	-webkit-transition: 0.3s all;
+	transition: 0.3s all;
+	border: 3px solid var(--primary) !important;
+	border-radius: 90px;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #fff;
+	width: 12.5rem;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	text-decoration: none;
+}
+.btn svg {
+	margin-right: 0.75rem;
+}
+.btn.btn-primary {
+	background: var(--primary);
+}
+.btn.btn-secondary {
+	background: transparent;
+}
+.btn:hover {
+	opacity: 0.8;
+}
+.about .banner {
+	background-image: url('/static/app/assets/images/banner.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.about .banner .nav-bar {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 2.5rem 4.375rem;
+}
+.about .banner .nav-bar .logo {
+	margin-right: 6.875rem;
+}
+.about .banner .nav-bar ul {
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+.about .banner .nav-bar ul li:not(:last-child) {
+	margin-right: 3.5rem;
+}
+.about .banner .nav-bar ul li a {
+	text-decoration: none;
+	font-size: 1.25rem;
+	font-weight: 500;
+	color: #fff;
+}
+.about .banner .nav-bar ul li a.active {
+	color: var(--primary);
+}
+.about .banner .content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-top: 2.5rem;
+}
+.about .banner .content h1 {
+	color: #fff;
+	font-weight: 800;
+	font-size: 3rem;
+	text-shadow: 0px 5px 6px rgba(0, 0, 0, 0.26);
+}
+.about .banner .content p {
+	color: #fff;
+	text-align: center;
+	line-height: 28px;
+}
+.about .banner .content p span {
+	display: block;
+}
+.about .banner .content a.btn {
+	margin: 2.5rem 0 3.75rem 0;
+	text-decoration: none;
+}
+.about .banner .content form {
+	margin-bottom: 7.5rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.about .banner .content form .form-group {
+	margin-bottom: 1.5rem;
+	width: 43.75rem;
+}
+.about .banner .content form .form-group .form-control {
+	padding: 0.875rem 2rem;
+	width: 100%;
+	border-radius: 40px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-size: 14px;
+	color: var(--secondary);
+	border: 0;
+	outline: none;
+}
+.about .banner .content form .form-group .form-control::-webkit-input-placeholder {
+	text-align: center;
+}
+.about .banner .content form .form-group .form-control:-ms-input-placeholder {
+	text-align: center;
+}
+.about .banner .content form .form-group .form-control::-ms-input-placeholder {
+	text-align: center;
+}
+.about .banner .content form .form-group .form-control::placeholder {
+	text-align: center;
+}
+.about .kick-starter {
+	margin: 3.125rem 10rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.about .kick-starter p {
+	color: var(--text-primary);
+	font-size: 1.125rem;
+	text-align: center;
+}
+.about .kick-starter p span {
+	display: block;
+	margin: 1.75rem 0;
+}
+.about .kick-starter .video-wrapper {
+	margin: 4rem 0 2.5rem 0;
+	height: 26.25rem;
+	width: 100%;
+	border: 1px solid;
+}
+.about .kick-starter .video-wrapper video {
+	height: 100%;
+	width: 100%;
+}
