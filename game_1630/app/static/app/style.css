@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-
 :root {
-	--primary-font: 'Roboto', sans-serif;
+	--primaryFont: 'Roboto', sans-serif;
 	--primary: #135cc9;
 	--secondary: rgba(31, 31, 31, 0.6);
-	--text-primary: rgba(0, 0, 0, 1);
+	--textPrimary: rgba(0, 0, 0, 1);
+	--textSecondary: #1c2c54;
 }
 body {
-	font-family: var(--primary-font);
+	font-family: var(--primaryFont);
 	margin: 0;
 	padding: 0;
 	-webkit-box-sizing: border-box;
@@ -164,8 +164,19 @@ p {
 .about .banner .content form .form-group .form-control::placeholder {
 	text-align: center;
 }
-.about .kick-starter {
+.about section {
 	margin: 3.125rem 10rem;
+}
+.about section p {
+	color: var(--textPrimary);
+	font-size: 1.125rem;
+	text-align: center;
+}
+.about section p span {
+	display: block;
+	margin: 1.75rem 0;
+}
+.about section.kick-starter {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -177,22 +188,46 @@ p {
 	-ms-flex-direction: column;
 	flex-direction: column;
 }
-.about .kick-starter p {
-	color: var(--text-primary);
-	font-size: 1.125rem;
+.about section.kick-starter span {
+	display: block;
 	text-align: center;
 }
-.about .kick-starter p span {
-	display: block;
-	margin: 1.75rem 0;
-}
-.about .kick-starter .video-wrapper {
+.about section.kick-starter .video-wrapper {
 	margin: 4rem 0 2.5rem 0;
 	height: 26.25rem;
 	width: 100%;
-	border: 1px solid;
 }
-.about .kick-starter .video-wrapper video {
-	height: 100%;
-	width: 100%;
+.about section.about-game {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.about section.about-game h2 {
+	font-size: 3rem;
+	text-align: center;
+	color: var(--textPrimary);
+	font-weight: 600;
+	margin-bottom: 2.5rem;
+}
+.about section.about-game .story {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	row-gap: 3.125rem;
+}
+.about section.about-game .story h3 {
+	font-size: 2rem;
+	font-weight: 500;
+	color: var(--textSecondary);
+	margin-bottom: 1.25rem;
+}
+.about section.about-game .story p {
+	text-align: left;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5rem;
 }
