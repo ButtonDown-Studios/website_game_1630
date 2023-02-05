@@ -48,7 +48,6 @@ const audioPlayer = document.querySelector(".audio-player");
 const audio = new Audio(
   "https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3"
 );
-//credit for song: Adrian kreativaweb@gmail.com
 
 audio.addEventListener(
   "loadeddata",
@@ -82,9 +81,6 @@ volumeSlider.addEventListener('click', e => {
 setInterval(() => {
   const progressBar = audioPlayer.querySelector(".progress");
   progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
-  // audioPlayer.querySelector(".time .current").textContent = getTimeCodeFromNum(
-  //   audio.currentTime
-  // );
   audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
     audio.duration, audio.currentTime
   );
@@ -133,5 +129,3 @@ function getTimeCodeFromNum(totalMusicTime, currentMusicTime) {
     seconds % 60
   ).padStart(2, 0)}`;
 }
-
-

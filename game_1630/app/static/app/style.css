@@ -482,3 +482,34 @@ section.Screenshots, section.artworks {
 	text-align: center;
 	margin-top: 3.125rem;
 }
+.join-cummunity {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.join-cummunity h4 {
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: var(--textSecondary);
+	margin-bottom: 1rem;
+}
+.join-cummunity h5 {
+	font-weight: 400;
+	font-size: 1rem;
+	color: var(--textPrimary);
+	margin-bottom: 2.5rem;
+}
+.join-cummunity ul {
+	display: flex;
+	list-style: none;
+}
+.join-cummunity ul li:not(:last-child){
+	margin-right: 2rem;
+}
+.join-cummunity span {
+	margin-top: 2.5rem;
+	display: block;
+	font-size: 0.875rem;
+	color: var(--textPrimary);
+}
