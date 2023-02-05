@@ -129,3 +129,13 @@ function getTimeCodeFromNum(totalMusicTime, currentMusicTime) {
     seconds % 60
   ).padStart(2, 0)}`;
 }
+
+
+// modal
+
+let myModal = new bootstrap.Modal(document.getElementById('newsletterModal'));
+
+setTimeout(() => {
+  myModal.show();
+}, 10000);
+

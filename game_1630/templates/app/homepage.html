@@ -290,6 +290,33 @@
 			Copyright © 2023 Button Down Studios - All rights reserved
 		</span>
 	</section>
+	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+		Launch demo modal
+	</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="newsletterModal">
+  <div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      <div class="modal-body">
+				<div class="image">
+					<img src="/static/app/assets/images/notification.png" alt="">
+				</div>
+				<h3>Subscribe to our newsletter</h3>
+				<p>First 100 subscribers get free access to the 1630 - The Thirty Years’ War closed beta tests</p>
+				<form action="">
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="Your Email" />
+					</div>
+					<div>
+						<button type="submit" class="btn btn-primary">Subscribe</button>
+					</div>
+				</form>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% endblock %}
