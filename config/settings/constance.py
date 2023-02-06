@@ -5,5 +5,5 @@ CONSTANCE_CONFIG = {
         datetime.min,
         "This is the time when website should go live at.",
         datetime
-    )
+    ),
 }

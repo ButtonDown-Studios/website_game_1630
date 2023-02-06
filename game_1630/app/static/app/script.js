@@ -40,9 +40,7 @@ function updateCounter() {
 
 }
 
-window.onload = function () {
-    updateCounter();
-};
+
 
 const audioPlayer = document.querySelector(".audio-player");
 const audio = new Audio(
@@ -132,10 +130,22 @@ function getTimeCodeFromNum(totalMusicTime, currentMusicTime) {
 
 
 // modal
+function openNewsletterModal() {
+    let myModal = new bootstrap.Modal(document.getElementById('newsletterModal'));
+    if (localStorage.getItem("isNewsletterModalOpened") !== "1") {
+        localStorage.setItem("isNewsletterModalOpened", "1");
 
-let myModal = new bootstrap.Modal(document.getElementById('newsletterModal'));
+        setTimeout(() => {
+            myModal.show();
+        }, 10000);
+    }
 
-setTimeout(() => {
-  myModal.show();
-}, 10000);
+}
 
+
+window.onload = function () {
+
+    openNewsletterModal()
+
+    updateCounter();
+};
