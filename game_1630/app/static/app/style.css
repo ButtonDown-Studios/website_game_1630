@@ -55,6 +55,7 @@ p {
 	background-image: url('/static/app/assets/images/banner.png');
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 100vh;
 }
 .about .banner .nav-bar {
 	display: -webkit-box;
