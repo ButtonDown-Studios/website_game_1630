@@ -37,6 +37,7 @@ DEFAULT_APPS = [
 THIRD_PARTY_APPS = [
     "django_celery_beat",
     "constance",
+    "import_export",
 ]
 
 CUSTOM_APPS = [
@@ -226,9 +227,10 @@ LOGGING = {
     },
 }
 
-SWAGGER_SETTINGS = {
-    "SECURITY_DEFINITIONS": {"api_key": {"type": "apiKey", "in": "header", "name": "Authorization"}},
-}
 
 
-API_BASE_URL = get_env_variable("API_BASE_URL")
+EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
+DEFAULT_FROM_EMAIL = "cl.dev@witterpro.xyz"
+SENDGRID_API_KEY = get_env_variable("SENDGRID_API_KEY")
+SENDGRID_ECHO_TO_STDOUT = True
+SENDGRID_SANDBOX_MODE_IN_DEBUG = False
