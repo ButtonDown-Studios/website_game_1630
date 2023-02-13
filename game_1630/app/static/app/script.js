@@ -44,7 +44,7 @@ function updateCounter() {
 
 const audioPlayer = document.querySelector(".audio-player");
 const audio = new Audio(
-  "https://hammad-sahab.com/django-static/app/assets/1630-theme-music.mp3"
+  "https://1630game.com/django-static/app/assets/1630-theme-music.mp3"
 );
 
 audio.addEventListener(
