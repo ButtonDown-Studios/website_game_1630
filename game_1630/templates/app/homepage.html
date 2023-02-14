@@ -1,319 +1,378 @@
 {% extends "app/base.html" %} {% load static %} {% block page %}
 
-<div class="about">
-	<div class="banner">
-		<div class="nav-bar">
-			<div class="logo">
-				<img src="{% static "/app/assets/svgs/logo.svg" %}" alt="" />
-			</div>
-			<ul>
-				<li><a href="#kickStarter">Kickstarter</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#faction">Factions</a></li>
-				<li><a href="#media">Media</a></li>
-				<li><a href="#pressKit">Press Kit</a></li>
-			</ul>
-			<span></span>
-		</div>
-		<div class="content">
-			<h1>A Nostalgic Real-Time Strategy Game</h1>
-			<p>
-				Become a military mastermind!
-				<span>Command musketeers, pikemen, cannons, and a variety of special units on the battlefield.</span>
-			</p>
-			<a href="https://www.youtube.com/watch?v=vmbEyrHarnY&ab_channel=1630ThirtyYears%27War" target="_blank" class="btn btn-secondary">
-				<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M0 12.7045C0 12.2351 0 11.7657 0 11.299C0.0137257 11.2304 0.0356869 11.1645 0.0411771 11.0959C0.140002 9.64094 0.48589 8.24092 1.131 6.93423C3.01142 3.11574 6.05578 0.840014 10.2586 0.134512C10.6017 0.076864 10.9504 0.0439223 11.299 0C11.7684 0 12.2378 0 12.7045 0C12.7649 0.0137257 12.8226 0.0356869 12.883 0.038432C14.5575 0.153728 16.1497 0.584715 17.6128 1.40277C21.5576 3.60986 23.7016 6.98639 23.9816 11.4994C24.1161 13.6653 23.6494 15.7352 22.587 17.6293C20.369 21.5878 16.9677 23.7235 12.4327 23.9816C10.5057 24.0914 8.6472 23.7098 6.91501 22.8615C3.22829 21.0552 0.977271 18.1262 0.189415 14.0881C0.0988251 13.6324 0.0631383 13.1657 0 12.7045ZM11.9935 21.9913C17.5058 21.9968 21.9749 17.5387 21.9913 12.0182C22.0078 6.50324 17.5305 2.01493 12.0073 2.00944C6.49775 2.00395 2.02866 6.46206 2.00944 11.9853C1.99023 17.4948 6.4703 21.9858 11.9935 21.9913Z"
-						fill="white"
-					/>
-					<path
-						d="M10.025 12.0018C10.025 10.846 10.0278 9.69034 10.0223 8.53189C10.0195 8.2464 10.0799 8.00208 10.3544 7.86482C10.629 7.72482 10.8623 7.82639 11.0901 7.99384C12.6823 9.15229 14.2745 10.308 15.8639 11.4637C16.3251 11.7986 16.3251 12.2323 15.8612 12.57C14.2635 13.7312 12.6631 14.8924 11.0654 16.0536C10.8403 16.2155 10.607 16.2979 10.3462 16.1634C10.0854 16.0289 10.0195 15.7928 10.0195 15.5155C10.0278 14.3434 10.025 13.1712 10.025 12.0018Z"
-						fill="white"
-					/>
-				</svg>
-				Watch Trailer
-			</a>
-			<form action="" method="post">
-					{% csrf_token %}
-				<div class="form-group">
-					<input name="email" type="email" class="form-control" placeholder="Sign up with Email to Receive Updates and Freebies" />
-				</div>
-				<div>
-					<button type="submit" class="btn btn-primary">Sign Me Up!</button>
-				</div>
-			</form>
-		</div>
-	</div>
-	<section class="kick-starter" id="kickStarter">
-		<span><img class="img-fluid" src="{% static "/app/assets/svgs/kick-starter.svg" %}" alt="Kickstarter" /></span>
-		<div class="video-wrapper">
-			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/vmbEyrHarnY"> </iframe>
-		</div>
-		<p>
-			We took over the project to finish its development and marketing.
-			<span
-				>The game is 80% complete and the last 20% stretch is the hardest to cross without support from Kickstarter to bring us home.</span
-			>
-			<span
-				>We have been funding the project out of our own pocket for some time and it is becoming increasingly difficult for us to keep up
+    <div class="about">
+        <div class="banner">
+            <div class="nav-bar">
+                <div class="logo">
+                    <img src="{% static "/app/assets/svgs/logo.svg" %}" alt=""/>
+                </div>
+                <ul>
+                    <li><a href="#kickStarter">Kickstarter</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#faction">Factions</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#pressKit">Press Kit</a></li>
+                </ul>
+                <span></span>
+            </div>
+            <div class="content">
+                <h1>A Nostalgic Real-Time Strategy Game</h1>
+                <p>
+                    Become a military mastermind!
+                    <span>Command musketeers, pikemen, cannons, and a variety of special units on the battlefield.</span>
+                </p>
+                <a href="https://www.youtube.com/watch?v=vmbEyrHarnY&ab_channel=1630ThirtyYears%27War" target="_blank"
+                   class="btn btn-secondary">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                                d="M0 12.7045C0 12.2351 0 11.7657 0 11.299C0.0137257 11.2304 0.0356869 11.1645 0.0411771 11.0959C0.140002 9.64094 0.48589 8.24092 1.131 6.93423C3.01142 3.11574 6.05578 0.840014 10.2586 0.134512C10.6017 0.076864 10.9504 0.0439223 11.299 0C11.7684 0 12.2378 0 12.7045 0C12.7649 0.0137257 12.8226 0.0356869 12.883 0.038432C14.5575 0.153728 16.1497 0.584715 17.6128 1.40277C21.5576 3.60986 23.7016 6.98639 23.9816 11.4994C24.1161 13.6653 23.6494 15.7352 22.587 17.6293C20.369 21.5878 16.9677 23.7235 12.4327 23.9816C10.5057 24.0914 8.6472 23.7098 6.91501 22.8615C3.22829 21.0552 0.977271 18.1262 0.189415 14.0881C0.0988251 13.6324 0.0631383 13.1657 0 12.7045ZM11.9935 21.9913C17.5058 21.9968 21.9749 17.5387 21.9913 12.0182C22.0078 6.50324 17.5305 2.01493 12.0073 2.00944C6.49775 2.00395 2.02866 6.46206 2.00944 11.9853C1.99023 17.4948 6.4703 21.9858 11.9935 21.9913Z"
+                                fill="white"
+                        />
+                        <path
+                                d="M10.025 12.0018C10.025 10.846 10.0278 9.69034 10.0223 8.53189C10.0195 8.2464 10.0799 8.00208 10.3544 7.86482C10.629 7.72482 10.8623 7.82639 11.0901 7.99384C12.6823 9.15229 14.2745 10.308 15.8639 11.4637C16.3251 11.7986 16.3251 12.2323 15.8612 12.57C14.2635 13.7312 12.6631 14.8924 11.0654 16.0536C10.8403 16.2155 10.607 16.2979 10.3462 16.1634C10.0854 16.0289 10.0195 15.7928 10.0195 15.5155C10.0278 14.3434 10.025 13.1712 10.025 12.0018Z"
+                                fill="white"
+                        />
+                    </svg>
+                    Watch Trailer
+                </a>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input name="email" type="email" class="form-control"
+                               placeholder="Sign up with Email to Receive Updates and Freebies"/>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Sign Me Up!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <section class="kick-starter" id="kickStarter">
+            <span><img class="img-fluid" src="{% static "/app/assets/svgs/kick-starter.svg" %}"
+                       alt="Kickstarter"/></span>
+            <div class="video-wrapper">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vmbEyrHarnY"></iframe>
+            </div>
+            <p>
+                We took over the project to finish its development and marketing.
+                <span
+                >The game is 80% complete and the last 20% stretch is the hardest to cross without support from Kickstarter to bring us home.</span
+                >
+                <span
+                >We have been funding the project out of our own pocket for some time and it is becoming increasingly difficult for us to keep up
 				with the expenses.</span
-			>
-			<span
-				>We are moving towards Kickstarter because we believe that with the help of the Backer Community; we can ensure the game is released
+                >
+                <span
+                >We are moving towards Kickstarter because we believe that with the help of the Backer Community; we can ensure the game is released
 				in the best possible state.</span
-			>
-		</p>
-		<a href="https://www.kickstarter.com/projects/buttondownstudios/1332429490?ref=eaq61u&token=0167d897" class="btn btn-primary">Kickstarter page</a>
-	</section>
-	<section class="about-game" id="about">
-		<h2>About Game</h2>
-		<p>
-			1630 - The Thirty Years' War is a thrilling and immersive real-time strategy game. Step into the shoes of a commander during one of
-			the most tumultuous periods in European history, during the Thirty Years' War.
-			<span
-				>Use your strategic skills to navigate the complex political landscape of the time and make key decisions that will determine the
+                >
+            </p>
+            <a href="https://www.kickstarter.com/projects/buttondownstudios/1332429490?ref=eaq61u&token=0167d897"
+               class="btn btn-primary">Kickstarter page</a>
+        </section>
+        <section class="about-game" id="about">
+            <h2>About Game</h2>
+            <p>
+                1630 - The Thirty Years' War is a thrilling and immersive real-time strategy game. Step into the shoes
+                of a commander during one of
+                the most tumultuous periods in European history, during the Thirty Years' War.
+                <span
+                >Use your strategic skills to navigate the complex political landscape of the time and make key decisions that will determine the
 				war's outcome.</span
-			>
-			<span
-				>Whether you are a history buff or just a fan of strategy games, 1630 - The Thirty Years' War is sure to provide hours of
+                >
+                <span
+                >Whether you are a history buff or just a fan of strategy games, 1630 - The Thirty Years' War is sure to provide hours of
 				entertainment and challenge.</span
-			>
-		</p>
-		<div class="row story">
-			<div class="col-md-6">
-				<h3>Set in 17th Century Europe</h3>
-				<p>
-					Experience this major conflict in European history, set within the Holy Roman Empire. Explore the beautiful landscapes and cities of Germany and Austria in varying light and weather conditions..
-				</p>
-			</div>
-			<div class="col-md-6">
-				<div class="image">
-					<img src="{% static 'app/assets/images/about_game/set-in-17th-century.png' %}" alt="17th Century Europe" class="img-fluid" />
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="image">
-					<img src="{% static 'app/assets/images/about_game/follow-captivating-story.png' %}" alt="17th Century Europe" class="img-fluid" />
-				</div>
-			</div>
-			<div class="col-md-6">
-				<h3>Follow a Captivating Story</h3>
-				<p>
-					Experience key battles and make strategic decisions that impact the outcome of the historical campaign. Side missions within the main campaign give a view into the culture, society, morality and strife of the general populace.
-				</p>
-			</div>
-			<div class="col-md-6">
-				<h3>Engage in Pike and Shot Warfare</h3>
-				<p>
-					Lead your soldiers in battles, using infantry armed with pikes and muskets, cannons for destroying enemy fortifications and cavalry for chasing down retreating enemy troops.
-				</p>
-			</div>
-			<div class="col-md-6">
-				<div class="image">
-					<img src="{% static 'app/assets/images/about_game/engage-in.png' %}" alt="17th Century Europe" class="img-fluid" />
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="image">
-					<img src="{% static 'app/assets/images/about_game/manage-supplies.png' %}" alt="17th Century Europe" class="img-fluid" />
-				</div>
-			</div>
-			<div class="col-md-6">
-				<h3>Manage your Supplies</h3>
-				<p>
-					Organize your armies with different units, each with its own strengths and weaknesses. Units cost gold to hire, consumes food regularly. You must live off the land and maintain ample stores of supply for your army.
-				</p>
-			</div>
-		</div>
-	</section>
-	<section class="faction" id="faction">
-		<h3>Factions</h3>
-		<p>We have two playable factions in the game, the <span>Imperial Holy Roman Empire</span> and the <span>Swedish Empire</span></p>
-		<div class="faction-card-wrapper">
-			<div class="faction-img">
-				<img class="img-fluid" src="{% static "/app/assets/svgs/yellow-faction.svg" %}" alt="">
-			</div>
-			<div class="faction-img">
-				<img class="img-fluid" src="{% static "/app/assets/svgs/blue-faction.svg" %}" alt="">
-			</div>
-		</div>
-	</section>
-	<section class="Screenshots">
-		<h3>Screenshots</h3>
-		<div class="images-wrapper">
-			<div class="image">
-				<img src="{% static "/app/assets/images/ss-1.png" %}" alt="">
-			</div>
-			<div class="image">
-				<img src="{% static "/app/assets/images/ss-2.png" %}" alt="">
-			</div>
-			<div class="image">
-				<img src={% static "/app/assets/images/ss-1.png" %} alt="">
-			</div>
-			<div class="image">
-				<img src={% static "/app/assets/images/ss-2.png" %} alt="">
-			</div>
-		</div>
-		<div class="images-wrapper">
-			<div class="image">
-				<img src="{% static "/app/assets/images/ss-1.png" %}" alt="">
-			</div>
-			<div class="image">
-				<img src="{% static "/app/assets/images/ss-2.png" %}" alt="">
-			</div>
-			<div class="image">
-				<img src="{% static "/app/assets/images/ss-1.png" %}" alt="">
-			</div>
-			<div class="image">
-				<img src="{% static "/app/assets/images/ss-2.png" %}" alt="">
-			</div>
-		</div>
-	</section>
-	<section class="artworks" id="media">
-		<h3>Artworks</h3>
-		<div class="images-wrapper">
-			<div class="image">
-				<img src="{% static "/app/assets/images/artwork-1.png" %}" alt="">
-			</div>
-			<div class="image">
-				<img src="{% static "/app/assets/images/artwork-2.png" %}" alt="">
-			</div>
-			<div class="image">
-				<img src="{% static "/app/assets/images/artwork-1.png" %}" alt="">
-			</div>
-			<div class="image">
-				<img src="{% static "/app/assets/images/artwork-2.png" %}" alt="">
-			</div>
-		</div>
-		<div class="images-wrapper">
-			<div class="image">
-				<img src="{% static "/app/assets/images/artwork-1.png" %}" alt="">
-			</div>
-			<div class="image">
-				<img src="{% static "/app/assets/images/artwork-2.png" %}" alt="">
-			</div>
-			<div class="image">
-				<img src="{% static "/app/assets/images/artwork-1.png" %}" alt="">
-			</div>
-			<div class="image">
-				<img src="{% static "/app/assets/images/artwork-2.png" %}" alt="">
-			</div>
-		</div>
-	</section>
-	<section class="music">
-		<h3>Music</h3>
-		<div class="audio-wrapper">
-			<div class="audio">
-				<div class="music-name">Thirty Years Of War</div>
-				<div class="music-theme">Theme music</div>
-				<div class="audio-player">
-					<div class="controls">
-						<div class="play-container">
-							<div class="toggle-play play"></div>
-						</div>
-						<div class="timeline">
-							<div class="progress"></div>
-						</div>
-						<div class="time">
-							<div class="length"></div>
-						</div>
-						<div class="volume-container">
-							<div class="volume-button">
-								<div class="volume icono-volumeMedium"></div>
-							</div>
-							<div class="volume-slider">
-								<div class="volume-percentage"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="newsletter">
-		<h3>Newsletter</h3>
-		<p>First 100 subscribers get free access to the 1630 - The Thirty Years’ War closed beta tests.</p>
-		<form action="" method="post">
-            {% csrf_token %}
-			<div class="form-group">
-				<input name="email" type="email" class="form-control" placeholder="Email address" />
-			</div>
-			<div>
-				<button type="submit" class="btn btn-primary">Subscribe</button>
-			</div>
-		</form>
-	</section>
-	<section class="pressKit" id="pressKit">
-		<h3>Press Kit</h3>
-		<div class="text-center">
-			<button type="submit" class="btn btn-primary">Download - 75mb</button>
-		</div>
-	</section>
-	<section class="join-cummunity">
-		<h4>join the community</h4>
-		<h5>hello@buttondownstudios.com</h5>
-		<ul>
-			<li>
-				<a href="{{ facebook_1630_link }}" target="_blank">
-					<img src="{% static "/app/assets/svgs/fb.svg" %}" alt="">
-				</a>
-			</li>
-			<li>
-				<a href="{{ tiktok_1630_link }}" target="_blank">
-					<img src="{% static "/app/assets/svgs/tiktok.svg" %}" alt="">
-				</a>
-			</li>
-			<li>
-				<a href="{{ discord_1630_link }}" target="_blank">
-					<img src="{% static "/app/assets/svgs/discord.svg" %}" alt="">
-				</a>
-			</li>
-			<li>
-				<a href="{{ instagram_1630_link }}" target="_blank">
-					<img src="{% static "/app/assets/svgs/instagram.svg" %}" alt="">
-				</a>
-			</li>
-			<li>
-				<a href="{{ youtube_1630_link }}" target="_blank">
-					<img src="{% static "/app/assets/svgs/youtube.svg" %}" alt="">
-				</a>
-			</li>
-			<li>
-				<a href="{{ twitter_1630_link }}" target="_blank">
-					<img src="{% static "/app/assets/svgs/twitter.svg" %}" alt="">
-				</a>
-			</li>
-		</ul>
-		<span>
+                >
+            </p>
+            <div class="row story">
+                <div class="col-md-6">
+                    <h3>Set in 17th Century Europe</h3>
+                    <p>
+                        Experience this major conflict in European history, set within the Holy Roman Empire. Explore
+                        the beautiful landscapes and cities of Germany and Austria in varying light and weather
+                        conditions..
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="image">
+                        <a href="{% static 'app/assets/images/about_game/set-in-17th-century.png' %}" target="_blank">
+                            <img src="{% static 'app/assets/images/about_game/set-in-17th-century.png' %}"
+                                 alt="17th Century Europe" class="img-fluid"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image">
+                        <a href="{% static 'app/assets/images/about_game/follow-captivating-story.png' %}"
+                           target="_blank">
+                            <img src="{% static 'app/assets/images/about_game/follow-captivating-story.png' %}"
+                                 alt="17th Century Europe" class="img-fluid"/>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Follow a Captivating Story</h3>
+                    <p>
+                        Experience key battles and make strategic decisions that impact the outcome of the historical
+                        campaign. Side missions within the main campaign give a view into the culture, society, morality
+                        and strife of the general populace.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Engage in Pike and Shot Warfare</h3>
+                    <p>
+                        Lead your soldiers in battles, using infantry armed with pikes and muskets, cannons for
+                        destroying enemy fortifications and cavalry for chasing down retreating enemy troops.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="image">
+                        <a href="{% static 'app/assets/images/about_game/engage-in.png' %}" target="_blank">
+                            <img src="{% static 'app/assets/images/about_game/engage-in.png' %}"
+                                 alt="17th Century Europe" class="img-fluid"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image">
+                        <a href="{% static 'app/assets/images/about_game/manage-supplies.png' %}" target="_blank">
+                            <img src="{% static 'app/assets/images/about_game/manage-supplies.png' %}"
+                                 alt="17th Century Europe" class="img-fluid"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Manage your Supplies</h3>
+                    <p>
+                        Organize your armies with different units, each with its own strengths and weaknesses. Units
+                        cost gold to hire, consumes food regularly. You must live off the land and maintain ample stores
+                        of supply for your army.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="faction" id="faction">
+            <h3>Factions</h3>
+            <p>We have two playable factions in the game, the <span>Imperial Holy Roman Empire</span> and the <span>Swedish Empire</span>
+            </p>
+            <div class="faction-card-wrapper">
+                <div class="faction-img">
+                    <img class="img-fluid" src="{% static "/app/assets/svgs/yellow-faction.svg" %}" alt="">
+                </div>
+                <div class="faction-img">
+                    <img class="img-fluid" src="{% static "/app/assets/svgs/blue-faction.svg" %}" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="Screenshots">
+            <h3>Screenshots</h3>
+            <div class="images-wrapper">
+                <div class="image">
+                    <a href="{% static "/app/assets/images/ss-1.png" %}" target="_blank">
+                        <img src="{% static "/app/assets/images/ss-1.png" %}" alt="">
+                    </a>
+                </div>
+                <div class="image">
+                    <a href="{% static "/app/assets/images/ss-2.png" %}" target="_blank">
+                        <img src="{% static "/app/assets/images/ss-2.png" %}" alt="">
+                    </a>
+                </div>
+                <div class="image">
+                    <a href="{% static "/app/assets/images/ss-1.png" %}" target="_blank">
+                        <img src={% static "/app/assets/images/ss-1.png" %} alt="">
+                    </a>
+                </div>
+                <div class="image">
+                    <a href="{% static "/app/assets/images/ss-2.png" %}" target="_blank">
+                        <img src={% static "/app/assets/images/ss-2.png" %} alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="images-wrapper">
+                <div class="image">
+                    <a href="{% static "/app/assets/images/ss-1.png" %}" target="_blank">
+                        <img src="{% static "/app/assets/images/ss-1.png" %}" alt="">
+                    </a>
+                </div>
+                <div class="image">
+                    <a href="{% static "/app/assets/images/ss-2.png" %}" target="_blank">
+                        <img src="{% static "/app/assets/images/ss-2.png" %}" alt="">
+                    </a>
+                </div>
+                <div class="image">
+                    <a href="{% static "/app/assets/images/ss-1.png" %}" target="_blank">
+                        <img src="{% static "/app/assets/images/ss-1.png" %}" alt="">
+                    </a>
+                </div>
+                <div class="image">
+                    <a href="{% static "/app/assets/images/ss-2.png" %}" target="_blank">
+                        <img src="{% static "/app/assets/images/ss-2.png" %}" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="artworks" id="media">
+            <h3>Artworks</h3>
+            <div class="images-wrapper">
+                <div class="image">
+                    <a href="{% static "/app/assets/images/artwork-1.png" %}" target="_blank">
+                        <img src="{% static "/app/assets/images/artwork-1.png" %}" alt="">
+                    </a>
+                </div>
+                <div class="image">
+                    <a href="{% static "/app/assets/images/artwork-2.png" %}" target="_blank">
+                        <img src="{% static "/app/assets/images/artwork-2.png" %}" alt="">
+                    </a>
+                </div>
+                <div class="image">
+                    <a href="{% static "/app/assets/images/artwork-1.png" %}" target="_blank">
+                        <img src="{% static "/app/assets/images/artwork-1.png" %}" alt="">
+                    </a>
+                </div>
+                <div class="image">
+                    <a href="{% static "/app/assets/images/artwork-2.png" %}" target="_blank">
+                        <img src="{% static "/app/assets/images/artwork-2.png" %}" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="images-wrapper">
+                <div class="image">
+                    <a href="{% static "/app/assets/images/artwork-1.png" %}" target="_blank">
+                        <img src="{% static "/app/assets/images/artwork-1.png" %}" alt="">
+                    </a>
+                </div>
+                <div class="image">
+                    <a href="{% static "/app/assets/images/artwork-2.png" %}" target="_blank">
+                        <img src="{% static "/app/assets/images/artwork-2.png" %}" alt="">
+                    </a>
+                </div>
+                <div class="image">
+                    <a href="{% static "/app/assets/images/artwork-1.png" %}" target="_blank">
+                        <img src="{% static "/app/assets/images/artwork-1.png" %}" alt="">
+                    </a>
+                </div>
+                <div class="image">
+                    <a href="{% static "/app/assets/images/artwork-2.png" %}" target="_blank">
+                        <img src="{% static "/app/assets/images/artwork-2.png" %}" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="music">
+            <h3>Music</h3>
+            <div class="audio-wrapper">
+                <div class="audio">
+                    <div class="music-name">Thirty Years Of War</div>
+                    <div class="music-theme">Theme music</div>
+                    <div class="audio-player">
+                        <div class="controls">
+                            <div class="play-container">
+                                <div class="toggle-play play"></div>
+                            </div>
+                            <div class="timeline">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time">
+                                <div class="length"></div>
+                            </div>
+                            <div class="volume-container">
+                                <div class="volume-button">
+                                    <div class="volume icono-volumeMedium"></div>
+                                </div>
+                                <div class="volume-slider">
+                                    <div class="volume-percentage"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter">
+            <h3>Newsletter</h3>
+            <p>First 100 subscribers get free access to the 1630 - The Thirty Years’ War closed beta tests.</p>
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input name="email" type="email" class="form-control" placeholder="Email address"/>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </div>
+            </form>
+        </section>
+        <section class="pressKit" id="pressKit">
+            <h3>Press Kit</h3>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Download - 75mb</button>
+            </div>
+        </section>
+        <section class="join-cummunity">
+            <h4>JOIN THE COMMUNITY</h4>
+            <h5>hello@buttondownstudios.com</h5>
+            <ul>
+                <li>
+                    <a href="{{ facebook_1630_link }}" target="_blank">
+                        <img src="{% static "/app/assets/svgs/fb.svg" %}" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ tiktok_1630_link }}" target="_blank">
+                        <img src="{% static "/app/assets/svgs/tiktok.svg" %}" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ discord_1630_link }}" target="_blank">
+                        <img src="{% static "/app/assets/svgs/discord.svg" %}" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ instagram_1630_link }}" target="_blank">
+                        <img src="{% static "/app/assets/svgs/instagram.svg" %}" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ youtube_1630_link }}" target="_blank">
+                        <img src="{% static "/app/assets/svgs/youtube.svg" %}" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ twitter_1630_link }}" target="_blank">
+                        <img src="{% static "/app/assets/svgs/twitter.svg" %}" alt="">
+                    </a>
+                </li>
+            </ul>
+            <span>
 			Copyright © 2023 Button Down Studios - All rights reserved
 		</span>
-	</section>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="newsletterModal">
-  <div class="modal-dialog modal-dialog-centered">
-		<div class="modal-content">
-			<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      <div class="modal-body">
-				<div class="image">
-					<img src="{% static "/app/assets/images/notification.png" %}" alt="">
-				</div>
-				<h3>Subscribe to our newsletter</h3>
-				<p>First 100 subscribers get free access to the 1630 - The Thirty Years’ War closed beta tests</p>
-				<form action="" method="post">
-                    {% csrf_token %}
-					<div class="form-group">
-						<input name="email" type="email" class="form-control" placeholder="Your Email" />
-					</div>
-					<div>
-						<button type="submit" class="btn btn-primary">Subscribe</button>
-					</div>
-				</form>
-      </div>
+        </section>
     </div>
-  </div>
-</div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="newsletterModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <div class="modal-body">
+                    <div class="image">
+                        <img src="{% static "/app/assets/images/notification.png" %}" alt="">
+                    </div>
+                    <h3>Subscribe to our newsletter</h3>
+                    <p>First 100 subscribers get free access to the 1630 - The Thirty Years’ War closed beta tests</p>
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input name="email" type="email" class="form-control" placeholder="Your Email"/>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
