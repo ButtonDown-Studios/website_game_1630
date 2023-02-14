@@ -220,6 +220,7 @@ p {
 	row-gap: 3.125rem;
 }
 .about section.about-game .story h3 {
+	text-align: left;
 	font-size: 2rem;
 	font-weight: 500;
 	color: var(--textSecondary);
@@ -233,6 +234,7 @@ p {
 }
 section.faction {
 	margin: 6.25rem 6.75rem;
+	max-width: 75rem;
 }
 h3 {
 	font-weight: 600;
@@ -577,4 +579,12 @@ section.Screenshots, section.artworks {
 .modal .modal-body form .btn{
 	padding: 0.5625rem;
 	width: 11.25rem;
+}
+
+@media screen and (min-width: 1600px) {
+	section {
+		max-width: 84.375rem;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
 }
