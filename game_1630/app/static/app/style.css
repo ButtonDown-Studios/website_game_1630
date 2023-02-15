@@ -195,6 +195,9 @@ p {
 	height: 30.25rem;
 	width: 90%;
 }
+.coming-soon-svg {
+	margin-top: 50px;
+}
 .about section.about-game {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -607,6 +610,7 @@ section.Screenshots, section.artworks {
 	.about .banner .content h1 {
 		font-size: 4.75rem;
 		margin-bottom: 1.5rem;
+		margin-top: 200px;
 	}
 	.about .banner .content p {
 		margin-bottom: 5rem;
