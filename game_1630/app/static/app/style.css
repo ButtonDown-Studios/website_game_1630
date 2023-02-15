@@ -52,7 +52,7 @@ p {
 	opacity: 0.8;
 }
 .about .banner {
-	background-image: url('./assets/images/banner.png');
+	background-image: url("assets/images/banner.png"), url("assets/images/banner-low-res.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
