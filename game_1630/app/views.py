@@ -24,7 +24,7 @@ class HomePageView(View):
         email = request.POST.get("email")
         if email:
             email = Email.objects.create(email=email)
-            send_email_to_recently_signed_up_user(email.id)
+            send_email_to_recently_signed_up_user.delay(email.id)
 
         context = {
             "datetime_site_goes_live_at": config.DATETIME_SITE_GOES_LIVE_AT,

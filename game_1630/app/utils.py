@@ -15,7 +15,7 @@ def send_email_to_recently_signed_up_user(email_object_id):
     email = Email.objects.get(id=email_object_id)
 
     send_mail(
-        subject="1630 - The Thirty Years War Newsletter Confirmation",
+        subject=" Welcome to 1630: The Thirty Years’ War",
         message="Thanks for subscribing.",
         html_message=render_to_string("app/email_newsletter.html"),
         from_email=settings.DEFAULT_FROM_EMAIL,
