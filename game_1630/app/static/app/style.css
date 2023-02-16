@@ -585,6 +585,12 @@ section.Screenshots, section.artworks {
 	width: 11.25rem;
 }
 
+@media screen and (min-width: 1900px) {
+	.about .banner .content h1 {
+		margin-top: 200px;
+	}
+}
+
 @media screen and (min-width: 1500px) {
 	p {
 		font-size: 24px !important;
@@ -610,7 +616,6 @@ section.Screenshots, section.artworks {
 	.about .banner .content h1 {
 		font-size: 4.75rem;
 		margin-bottom: 1.5rem;
-		margin-top: 200px;
 	}
 	.about .banner .content p {
 		margin-bottom: 5rem;
