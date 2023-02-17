@@ -3,11 +3,16 @@ from django.shortcuts import render
 from django.views import View
 
 from game_1630.app.models import Email
-from game_1630.app.utils import send_email_to_recently_signed_up_user
+from game_1630.app.utils import send_email_to_recently_signed_up_user, track_event
 
 
 class HomePageView(View):
     def get(self, request, *args, **kwargs):
+        track_event(
+            category='1630-Homepage',
+            action='page-visited'
+        )
+
         context = {
             "datetime_site_goes_live_at": config.DATETIME_SITE_GOES_LIVE_AT,
             "facebook_1630_link": config.FACEBOOK_1630_LINK,
