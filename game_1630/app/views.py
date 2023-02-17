@@ -15,6 +15,9 @@ class HomePageView(View):
 
         context = {
             "datetime_site_goes_live_at": config.DATETIME_SITE_GOES_LIVE_AT,
+            "press_kit_link": config.PRESS_KIT_LINK,
+            "press_kit_button_text": config.PRESS_KIT_BUTTON_TEXT,
+            "kickstarter_link": config.KICKSTARTER_LINK,
             "facebook_1630_link": config.FACEBOOK_1630_LINK,
             "tiktok_1630_link": config.TIKTOK_1630_LINK,
             "discord_1630_link": config.DISCORD_1630_LINK,

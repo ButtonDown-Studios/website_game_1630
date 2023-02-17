@@ -6,6 +6,21 @@ CONSTANCE_CONFIG = {
         "This is the time when website should go live at.",
         datetime
     ),
+    "PRESS_KIT_LINK": (
+        "",
+        "URL link for press kit.",
+        str
+    ),
+    "PRESS_KIT_BUTTON_TEXT": (
+        "Download",
+        "URL link for press kit.",
+        str,
+    ),
+    "KICKSTARTER_LINK": (
+        "",
+        "URL link for kickstarter site. Can be left empty to conceal it.",
+        str,
+    ),
     "FACEBOOK_1630_LINK": (
         "",
         "Facebook link for 1630.",

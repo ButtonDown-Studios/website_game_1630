@@ -79,8 +79,9 @@
 				in the best possible state.</span
                 >
             </p>
-            <a href="https://www.kickstarter.com/projects/buttondownstudios/1332429490?ref=eaq61u&token=0167d897" target="_blank"
-               class="btn btn-primary">Kickstarter page</a>
+            <a href="{{ kickstarter_link }}" target="_blank" class="btn btn-primary">
+                Kickstarter page
+            </a>
         </section>
         <section class="about-game" id="about">
             <h2>About Game</h2>
@@ -318,7 +319,9 @@
         <section class="pressKit" id="pressKit">
             <h3>Press Kit</h3>
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">Download - 75mb</button>
+                <a href="{{ press_kit_link }}">
+                    <button type="submit" class="btn btn-primary">{{ press_kit_button_text }}</button>
+                </a>
             </div>
         </section>
         <section class="join-cummunity">
