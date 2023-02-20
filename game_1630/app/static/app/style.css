@@ -344,7 +344,7 @@ section.Screenshots, section.artworks {
 }
 
 .volume-container {
-	cursor: pointer;	
+	cursor: pointer;
 	position: relative;
 	z-index: 2;
 }
@@ -521,53 +521,53 @@ section.Screenshots, section.artworks {
 	color: var(--textPrimary);
 }
 
-/* modal style  */
+/* sign up modal style  */
 
-.modal-dialog {
+.signup-modal-dialog {
 	max-width: 37.5rem;
 }
-.modal .modal-content {
+.signup-modal .signup-modal-content {
 	position: relative;
 	border-radius: 8px;
 	border: 0;
 	padding: 1.875rem 5rem;
 }
-.modal .modal-content .btn-close{
+.signup-modal .signup-modal-content .btn-close{
 	position: absolute;
 	top: 24px;
 	right: 24px;
 	box-shadow: none;
 	outline: none;
 }
-.modal .modal-body {
+.signup-modal .modal-body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-.modal .modal-body h3 {
+.signup-modal .modal-body h3 {
 	font-size: 1.75rem;
 	font-weight: 500;
 	color: var(--textPrimary);
 	margin: 1.5rem 0;
 }
-.modal .modal-body p {
+.signup-modal .modal-body p {
 	font-size: 1rem;
 	color: var(--textPrimary);
 	margin-bottom: 2rem;
 	text-align: center;
 }
-.modal .modal-body form {
+.signup-modal .modal-body form {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
 }
-.modal .modal-body .form-group {
+.signup-modal .modal-body .form-group {
 	margin-bottom: 2rem;
 	width: 100%;
 }
-.modal .modal-body .form-control {
+.signup-modal .modal-body .form-control {
 	padding: 0.8125rem 2.5rem;
 	width: 100%;
 	border-radius: 40px;
@@ -577,13 +577,33 @@ section.Screenshots, section.artworks {
 	border: 1px solid var(--primary);
 	outline: none;
 }
-.modal .modal-body .form-group .form-control::placeholder {
+.signup-modal .modal-body .form-group .form-control::placeholder {
 	text-align: center;
 }
-.modal .modal-body form .btn{
+.signup-modal .modal-body form .btn{
 	padding: 0.5625rem;
 	width: 11.25rem;
 }
+
+
+/* carousal style */
+.carousal-dialog {
+    max-width: 80% !important;
+    /*margin-top: 5%;*/
+}
+
+.carousel-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-icon {
+	height: 200px !important;
+	width: 100px !important;
+   font-size: 25px;
+
+}
+
 
 /*@media screen and (min-width: 1900px) {*/
 /*	.about .banner .content h1 {*/
@@ -691,4 +711,7 @@ section.Screenshots, section.artworks {
 		width: 400px !important;
 	}
 
+    .carousal-dialog {
+        margin-top: 40% !important;
+    }
 }

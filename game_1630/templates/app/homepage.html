@@ -2,11 +2,15 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-32VDW9VNLG"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-32VDW9VNLG');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-32VDW9VNLG');
     </script>
 
     <div class="about">
@@ -109,19 +113,19 @@
                 </div>
                 <div class="col-md-6">
                     <div class="image">
-{#                        <a href="{% static 'app/assets/images/about_game/set-in-17th-century.png' %}" target="_blank">#}
-                            <img src="{% static 'app/assets/images/about_game/set-in-17th-century.png' %}"
-                                 alt="17th Century Europe" class="img-fluid"/>
-{#                        </a>#}
+                        {#                        <a href="{% static 'app/assets/images/about_game/set-in-17th-century.png' %}" target="_blank">#}
+                        <img src="{% static 'app/assets/images/about_game/set-in-17th-century.png' %}"
+                             alt="17th Century Europe" class="img-fluid"/>
+                        {#                        </a>#}
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="image">
-{#                        <a href="{% static 'app/assets/images/about_game/follow-captivating-story.png' %}"#}
-                           target="_blank">
-                            <img src="{% static 'app/assets/images/about_game/follow-captivating-story.png' %}"
-                                 alt="17th Century Europe" class="img-fluid"/>
-{#                        </a>#}
+                        {#                        <a href="{% static 'app/assets/images/about_game/follow-captivating-story.png' %}"#}
+                        target="_blank">
+                        <img src="{% static 'app/assets/images/about_game/follow-captivating-story.png' %}"
+                             alt="17th Century Europe" class="img-fluid"/>
+                        {#                        </a>#}
 
                     </div>
                 </div>
@@ -142,18 +146,18 @@
                 </div>
                 <div class="col-md-6">
                     <div class="image">
-{#                        <a href="{% static 'app/assets/images/about_game/engage-in.png' %}" target="_blank">#}
-                            <img src="{% static 'app/assets/images/about_game/engage-in.png' %}"
-                                 alt="17th Century Europe" class="img-fluid"/>
-{#                        </a>#}
+                        {#                        <a href="{% static 'app/assets/images/about_game/engage-in.png' %}" target="_blank">#}
+                        <img src="{% static 'app/assets/images/about_game/engage-in.png' %}"
+                             alt="17th Century Europe" class="img-fluid"/>
+                        {#                        </a>#}
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="image">
-{#                        <a href="{% static 'app/assets/images/about_game/manage-supplies.png' %}" target="_blank">#}
-                            <img src="{% static 'app/assets/images/about_game/manage-supplies.png' %}"
-                                 alt="17th Century Europe" class="img-fluid"/>
-{#                        </a>#}
+                        {#                        <a href="{% static 'app/assets/images/about_game/manage-supplies.png' %}" target="_blank">#}
+                        <img src="{% static 'app/assets/images/about_game/manage-supplies.png' %}"
+                             alt="17th Century Europe" class="img-fluid"/>
+                        {#                        </a>#}
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -183,44 +187,44 @@
             <h3>Screenshots</h3>
             <div class="images-wrapper">
                 <div class="image">
-                    <a href="{% static "/app/assets/screenshots/ss1.jpg" %}" target="_blank">
+                    <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="0">
                         <img src="{% static "/app/assets/screenshots/ss1-low.png" %}" alt="">
                     </a>
                 </div>
                 <div class="image">
-                    <a href="{% static "/app/assets/screenshots/ss2.jpg" %}" target="_blank">
+                    <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="1">
                         <img src="{% static "/app/assets/screenshots/ss2-low.png" %}" alt="">
                     </a>
                 </div>
                 <div class="image">
-                    <a href="{% static "/app/assets/screenshots/ss3.png" %}" target="_blank">
-                        <img src={% static "/app/assets/screenshots/ss3-low.png" %} alt="">
+                    <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="2">
+                        <img src="{% static "/app/assets/screenshots/ss3-low.png" %}" alt="">
                     </a>
                 </div>
                 <div class="image">
-                    <a href="{% static "/app/assets/screenshots/ss4.png" %}" target="_blank">
-                        <img src={% static "/app/assets/screenshots/ss4-low.png" %} alt="">
+                    <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="3">
+                        <img src="{% static "/app/assets/screenshots/ss4-low.png" %}" alt="">
                     </a>
                 </div>
             </div>
             <div class="images-wrapper">
                 <div class="image">
-                    <a href="{% static "/app/assets/screenshots/ss5.png" %}" target="_blank">
+                    <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="4">
                         <img src="{% static "/app/assets/screenshots/ss5-low.png" %}" alt="">
                     </a>
                 </div>
                 <div class="image">
-                    <a href="{% static "/app/assets/screenshots/ss6.png" %}" target="_blank">
+                    <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="5">
                         <img src="{% static "/app/assets/screenshots/ss6-low.png" %}" alt="">
                     </a>
                 </div>
                 <div class="image">
-                    <a href="{% static "/app/assets/screenshots/ss7.jpg" %}" target="_blank">
+                    <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="6">
                         <img src="{% static "/app/assets/screenshots/ss7-low.png" %}" alt="">
                     </a>
                 </div>
                 <div class="image">
-                    <a href="{% static "/app/assets/screenshots/ss8.jpg" %}" target="_blank">
+                    <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="7">
                         <img src="{% static "/app/assets/screenshots/ss8-low.png" %}" alt="">
                     </a>
                 </div>
@@ -230,44 +234,44 @@
             <h3>Artworks</h3>
             <div class="images-wrapper">
                 <div class="image">
-                    <a href="{% static "/app/assets/artworks/aa1.jpg" %}" target="_blank">
+                    <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="0">
                         <img src="{% static "/app/assets/artworks/aa1-low.png" %}" alt="">
                     </a>
                 </div>
                 <div class="image">
-                    <a href="{% static "/app/assets/artworks/aa2.jpg" %}" target="_blank">
+                    <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="1">
                         <img src="{% static "/app/assets/artworks/aa2-low.png" %}" alt="">
                     </a>
                 </div>
                 <div class="image">
-                    <a href="{% static "/app/assets/artworks/aa3.jpg" %}" target="_blank">
+                    <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="2">
                         <img src="{% static "/app/assets/artworks/aa3-low.png" %}" alt="">
                     </a>
                 </div>
                 <div class="image">
-                    <a href="{% static "/app/assets/artworks/aa4.jpg" %}" target="_blank">
+                    <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="3">
                         <img src="{% static "/app/assets/artworks/aa4-low.png" %}" alt="">
                     </a>
                 </div>
             </div>
             <div class="images-wrapper">
                 <div class="image">
-                    <a href="{% static "/app/assets/artworks/aa5.png" %}" target="_blank">
+                    <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="4">
                         <img src="{% static "/app/assets/artworks/aa5-low.png" %}" alt="">
                     </a>
                 </div>
                 <div class="image">
-                    <a href="{% static "/app/assets/artworks/aa6.jpg" %}" target="_blank">
+                    <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="5">
                         <img src="{% static "/app/assets/artworks/aa6-low.png" %}" alt="">
                     </a>
                 </div>
                 <div class="image">
-                    <a href="{% static "/app/assets/artworks/aa7.jpg" %}" target="_blank">
+                    <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="6">
                         <img src="{% static "/app/assets/artworks/aa7-low.png" %}" alt="">
                     </a>
                 </div>
                 <div class="image">
-                    <a href="{% static "/app/assets/artworks/aa8.png" %}" target="_blank">
+                    <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="7">
                         <img width="179px" src="{% static "/app/assets/artworks/aa8-low.png" %}" alt="">
                     </a>
                 </div>
@@ -365,10 +369,132 @@
         </section>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="newsletterModal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
+    {# screenshots carousel #}
+    <div class="container-fluid">
+        <main class="row">
+            <!-- Modal -->
+            <div class="modal fade" id="screenshot-carousel-modal" tabindex="-1" aria-labelledby="screenshot-carousel-modalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog carousal-dialog">
+                    <div class="modal-content">
+                        <div id="screenshotExampleControls" class="carousel slide" data-bs-ride="carousel"
+                             data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active carousel-image">
+                                    <img src="{% static "/app/assets/screenshots/ss1.jpg" %}"
+                                         alt="" >
+                                </div>
+                                <div class="carousel-item carousel-image">
+                                    <img src="{% static "/app/assets/screenshots/ss2.jpg" %}"
+                                          alt="..." >
+                                </div>
+                                <div class="carousel-item carousel-image">
+                                    <img src="{% static "/app/assets/screenshots/ss3.png" %}"
+                                          alt="..." >
+                                </div>
+                                <div class="carousel-item carousel-image">
+                                    <img src="{% static "/app/assets/screenshots/ss4.png" %}"
+                                          alt="...">
+                                </div>
+                                <div class="carousel-item carousel-image">
+                                    <img src="{% static "/app/assets/screenshots/ss5.png" %}"
+                                         class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item carousel-image">
+                                    <img src="{% static "/app/assets/screenshots/ss6.png" %}"
+                                         class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item carousel-image">
+                                    <img src="{% static "/app/assets/screenshots/ss7.jpg" %}"
+                                         class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item carousel-image">
+                                    <img src="{% static "/app/assets/screenshots/ss8.jpg" %}"
+                                         class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#screenshotExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                    data-bs-target="#screenshotExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    {# artwork carousel #}
+    <div class="container-fluid">
+        <main class="row">
+            <!-- Modal -->
+            <div class="modal fade" id="artwork-carousel-modal" tabindex="-1" aria-labelledby="artwork-carousel-modalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog carousal-dialog">
+                    <div class="modal-content">
+                        <div id="artowrkExampleControls" class="carousel slide" data-bs-ride="carousel"
+                             data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active carousel-image">
+                                    <img src="{% static "/app/assets/artworks/aa1.jpg" %}"
+                                         alt="" >
+                                </div>
+                                <div class="carousel-item carousel-image">
+                                    <img src="{% static "/app/assets/artworks/aa2.jpg" %}"
+                                          alt="..." >
+                                </div>
+                                <div class="carousel-item carousel-image">
+                                    <img src="{% static "/app/assets/artworks/aa3.jpg" %}"
+                                          alt="..." >
+                                </div>
+                                <div class="carousel-item carousel-image">
+                                    <img src="{% static "/app/assets/artworks/aa4.jpg" %}"
+                                          alt="...">
+                                </div>
+                                <div class="carousel-item carousel-image">
+                                    <img src="{% static "/app/assets/artworks/aa5.png" %}"
+                                         class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item carousel-image">
+                                    <img src="{% static "/app/assets/artworks/aa6.jpg" %}"
+                                         class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item carousel-image">
+                                    <img src="{% static "/app/assets/artworks/aa7.jpg" %}"
+                                         class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item carousel-image">
+                                    <img src="{% static "/app/assets/artworks/aa8.png" %}"
+                                         class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#artowrkExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                    data-bs-target="#artowrkExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon carousel-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- sign up Modal -->
+    <div class="modal fade signup-modal" id="newsletterModal">
+        <div class="modal-dialog modal-dialog-centered signup-modal-dialog">
+            <div class="modal-content signup-modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 <div class="modal-body">
                     <div class="image">
