@@ -6,7 +6,6 @@
 	--textPrimary: rgba(0, 0, 0, 1);
 	--textSecondary: #1c2c54;
 }
-
 body {
 	font-family: var(--primaryFont);
 	margin: 0;
