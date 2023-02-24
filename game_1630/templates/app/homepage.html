@@ -39,20 +39,20 @@
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                                 d="M0 12.7045C0 12.2351 0 11.7657 0 11.299C0.0137257 11.2304 0.0356869 11.1645 0.0411771 11.0959C0.140002 9.64094 0.48589 8.24092 1.131 6.93423C3.01142 3.11574 6.05578 0.840014 10.2586 0.134512C10.6017 0.076864 10.9504 0.0439223 11.299 0C11.7684 0 12.2378 0 12.7045 0C12.7649 0.0137257 12.8226 0.0356869 12.883 0.038432C14.5575 0.153728 16.1497 0.584715 17.6128 1.40277C21.5576 3.60986 23.7016 6.98639 23.9816 11.4994C24.1161 13.6653 23.6494 15.7352 22.587 17.6293C20.369 21.5878 16.9677 23.7235 12.4327 23.9816C10.5057 24.0914 8.6472 23.7098 6.91501 22.8615C3.22829 21.0552 0.977271 18.1262 0.189415 14.0881C0.0988251 13.6324 0.0631383 13.1657 0 12.7045ZM11.9935 21.9913C17.5058 21.9968 21.9749 17.5387 21.9913 12.0182C22.0078 6.50324 17.5305 2.01493 12.0073 2.00944C6.49775 2.00395 2.02866 6.46206 2.00944 11.9853C1.99023 17.4948 6.4703 21.9858 11.9935 21.9913Z"
-                                fill="white"
-                        />
+                                fill="white"></path>
                         <path
                                 d="M10.025 12.0018C10.025 10.846 10.0278 9.69034 10.0223 8.53189C10.0195 8.2464 10.0799 8.00208 10.3544 7.86482C10.629 7.72482 10.8623 7.82639 11.0901 7.99384C12.6823 9.15229 14.2745 10.308 15.8639 11.4637C16.3251 11.7986 16.3251 12.2323 15.8612 12.57C14.2635 13.7312 12.6631 14.8924 11.0654 16.0536C10.8403 16.2155 10.607 16.2979 10.3462 16.1634C10.0854 16.0289 10.0195 15.7928 10.0195 15.5155C10.0278 14.3434 10.025 13.1712 10.025 12.0018Z"
-                                fill="white"
-                        />
+                                fill="white"></path>
                     </svg>
                     Watch Trailer
                 </a>
                 <form action="" method="post">
                     {% csrf_token %}
                     <div class="form-group">
-                        <input name="email" type="email" class="form-control"
-                               placeholder="Sign up with Email to Receive Updates and Freebies"/>
+                        <label>
+                            <input name="email" type="email" class="form-control"
+                                   placeholder="Sign up with Email to Receive Updates and Freebies"/>
+                        </label>
                     </div>
                     <div>
                         <button type="submit" class="btn btn-primary">Sign Me Up!</button>
@@ -316,7 +316,9 @@
             <form action="" method="post">
                 {% csrf_token %}
                 <div class="form-group">
-                    <input name="email" type="email" class="form-control" placeholder="Email address"/>
+                    <label>
+                        <input name="email" type="email" class="form-control" placeholder="Email address"/>
+                    </label>
                 </div>
                 <div>
                     <button type="submit" class="btn btn-primary">Subscribe</button>
@@ -384,11 +386,11 @@
                              data-bs-interval="false">
                             <div class="carousel-inner">
                                 <div class="carousel-item active carousel-image">
-                                    <img src="{% static "/app/assets/screenshots/ss1.jpg" %}"
+                                    <img src="{% static "/app/assets/screenshots/ss1.png" %}"
                                          alt="" >
                                 </div>
                                 <div class="carousel-item carousel-image">
-                                    <img src="{% static "/app/assets/screenshots/ss2.jpg" %}"
+                                    <img src="{% static "/app/assets/screenshots/ss2.png" %}"
                                           alt="..." >
                                 </div>
                                 <div class="carousel-item carousel-image">
@@ -408,11 +410,11 @@
                                          class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item carousel-image">
-                                    <img src="{% static "/app/assets/screenshots/ss7.jpg" %}"
+                                    <img src="{% static "/app/assets/screenshots/ss7.png" %}"
                                          class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item carousel-image">
-                                    <img src="{% static "/app/assets/screenshots/ss8.jpg" %}"
+                                    <img src="{% static "/app/assets/screenshots/ss8.png" %}"
                                          class="d-block w-100" alt="...">
                                 </div>
                             </div>
@@ -445,19 +447,19 @@
                              data-bs-interval="false">
                             <div class="carousel-inner">
                                 <div class="carousel-item active carousel-image">
-                                    <img src="{% static "/app/assets/artworks/aa1.jpg" %}"
+                                    <img src="{% static "/app/assets/artworks/aa1.png" %}"
                                          alt="" >
                                 </div>
                                 <div class="carousel-item carousel-image">
-                                    <img src="{% static "/app/assets/artworks/aa2.jpg" %}"
+                                    <img src="{% static "/app/assets/artworks/aa2.png" %}"
                                           alt="..." >
                                 </div>
                                 <div class="carousel-item carousel-image">
-                                    <img src="{% static "/app/assets/artworks/aa3.jpg" %}"
+                                    <img src="{% static "/app/assets/artworks/aa3.png" %}"
                                           alt="..." >
                                 </div>
                                 <div class="carousel-item carousel-image">
-                                    <img src="{% static "/app/assets/artworks/aa4.jpg" %}"
+                                    <img src="{% static "/app/assets/artworks/aa4.png" %}"
                                           alt="...">
                                 </div>
                                 <div class="carousel-item carousel-image">
@@ -465,11 +467,11 @@
                                          class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item carousel-image">
-                                    <img src="{% static "/app/assets/artworks/aa6.jpg" %}"
+                                    <img src="{% static "/app/assets/artworks/aa6.png" %}"
                                          class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item carousel-image">
-                                    <img src="{% static "/app/assets/artworks/aa7.jpg" %}"
+                                    <img src="{% static "/app/assets/artworks/aa7.png" %}"
                                          class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item carousel-image">
