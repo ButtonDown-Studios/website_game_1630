@@ -20,7 +20,7 @@
                     <img src="{% static "/app/assets/svgs/logo.svg" %}" alt=""/>
                 </div>
                 <ul>
-                    <li><a href="#kickStarter">Kickstarter</a></li>
+{#                    <li><a href="#kickStarter">Kickstarter</a></li>#}
                     <li><a href="#about">About</a></li>
                     <li><a href="#faction">Factions</a></li>
                     <li><a href="#media">Media</a></li>
@@ -46,43 +46,43 @@
                     </svg>
                     Watch Trailer
                 </a>
-                <form action="" method="post">
-                    {% csrf_token %}
-                    <div class="form-group">
+{#                <form action="" method="post">#}
+{#                    {% csrf_token %}#}
+{#                    <div class="form-group">#}
 {#                        <label>#}
-                            <input name="email" type="email" class="form-control"  {# noqa #}
-                                   placeholder="Sign up with Email to Receive Updates and Freebies"/>
+{#                            <input name="email" type="email" class="form-control"  {# noqa #}
+{#                                   placeholder="Sign up with Email to Receive Updates and Freebies"/>#}
 {#                        </label>#}
-                    </div>
-                    <div>
-                        <button type="submit" class="btn btn-primary">Sign Me Up!</button>
-                    </div>
-                </form>
+{#                    </div>#}
+{#                    <div>#}
+{#                        <button type="submit" class="btn btn-primary">Sign Me Up!</button>#}
+{#                    </div>#}
+{#                </form>#}
             </div>
         </div>
-        <section class="kick-starter" id="kickStarter">
-            <span><img class="img-fluid" src="{% static "/app/assets/svgs/kick-starter.svg" %}"
-                       alt="Kickstarter"/></span>
-            <div class="coming-soon-svg">
-                <img src="{% static 'app/assets/svgs/coming-soon.svg' %}" alt="coming-soon">
-            </div>
-            <div class="video-wrapper">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dXa-clQIS_A"></iframe>
-            </div>
-            <p>
-                We're a small indie studio and need your help to bring our passion project to life. Kickstarter will allow us to overcome the final hurdle and share our game with the world.
-                <span>
-                    We have been funding the project out of our own pocket for some time, and it is becoming increasingly difficult for us to keep up
-				with the expenses.
-                </span>
-                <span>
-                    We are moving towards Kickstarter because we believe that with the help of the Backer Community; we can ensure the game is released in the best possible state.
-                </span>
-            </p>
-            <a href="{{ kickstarter_link }}" target="_blank" class="btn btn-primary">
-                Kickstarter page
-            </a>
-        </section>
+{#        <section class="kick-starter" id="kickStarter">#}
+{#            <span><img class="img-fluid" src="{% static "/app/assets/svgs/kick-starter.svg" %}"#}
+{#                       alt="Kickstarter"/></span>#}
+{#            <div class="coming-soon-svg">#}
+{#                <img src="{% static 'app/assets/svgs/coming-soon.svg' %}" alt="coming-soon">#}
+{#            </div>#}
+{#            <div class="video-wrapper">#}
+{#                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dXa-clQIS_A"></iframe>#}
+{#            </div>#}
+{#            <p>#}
+{#                We're a small indie studio and need your help to bring our passion project to life. Kickstarter will allow us to overcome the final hurdle and share our game with the world.#}
+{#                <span>#}
+{#                    We have been funding the project out of our own pocket for some time, and it is becoming increasingly difficult for us to keep up#}
+{#				with the expenses.#}
+{#                </span>#}
+{#                <span>#}
+{#                    We are moving towards Kickstarter because we believe that with the help of the Backer Community; we can ensure the game is released in the best possible state.#}
+{#                </span>#}
+{#            </p>#}
+{#            <a href="{{ kickstarter_link }}" target="_blank" class="btn btn-primary">#}
+{#                Kickstarter page#}
+{#            </a>#}
+{#        </section>#}
         <section class="about-game" id="about">
             <h2>About Game</h2>
             <p>
@@ -330,42 +330,42 @@
             </div>
         </section>
         <section class="join-cummunity">
-            <h4>JOIN THE COMMUNITY</h4>
-            <h5>contactus@buttondownstudios.com</h5>
-            <ul>
-                <li>
-                    <a href="{{ facebook_1630_link }}" target="_blank">
-                        <img src="{% static "/app/assets/svgs/fb.svg" %}" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ tiktok_1630_link }}" target="_blank">
-                        <img src="{% static "/app/assets/svgs/tiktok.svg" %}" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ discord_1630_link }}" target="_blank">
-                        <img src="{% static "/app/assets/svgs/discord.svg" %}" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ instagram_1630_link }}" target="_blank">
-                        <img src="{% static "/app/assets/svgs/instagram.svg" %}" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ youtube_1630_link }}" target="_blank">
-                        <img src="{% static "/app/assets/svgs/youtube.svg" %}" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ twitter_1630_link }}" target="_blank">
-                        <img src="{% static "/app/assets/svgs/twitter.svg" %}" alt="">
-                    </a>
-                </li>
-            </ul>
+{#            <h4>JOIN THE COMMUNITY</h4>#}
+{#            <h5>contactus@buttondownstudios.com</h5>#}
+{#            <ul>#}
+{#                <li>#}
+{#                    <a href="{{ facebook_1630_link }}" target="_blank">#}
+{#                        <img src="{% static "/app/assets/svgs/fb.svg" %}" alt="">#}
+{#                    </a>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="{{ tiktok_1630_link }}" target="_blank">#}
+{#                        <img src="{% static "/app/assets/svgs/tiktok.svg" %}" alt="">#}
+{#                    </a>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="{{ discord_1630_link }}" target="_blank">#}
+{#                        <img src="{% static "/app/assets/svgs/discord.svg" %}" alt="">#}
+{#                    </a>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="{{ instagram_1630_link }}" target="_blank">#}
+{#                        <img src="{% static "/app/assets/svgs/instagram.svg" %}" alt="">#}
+{#                    </a>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="{{ youtube_1630_link }}" target="_blank">#}
+{#                        <img src="{% static "/app/assets/svgs/youtube.svg" %}" alt="">#}
+{#                    </a>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a href="{{ twitter_1630_link }}" target="_blank">#}
+{#                        <img src="{% static "/app/assets/svgs/twitter.svg" %}" alt="">#}
+{#                    </a>#}
+{#                </li>#}
+{#            </ul>#}
             <span>
-			Copyright © 2023 Button Down Studios LLC & Conquista Games UG. Financially supported by the FFF Bayern & BMVI. All rights reserved.
+			Copyright © 2023 Conquista Games UG. Financially supported by the FFF Bayern & BMVI. All rights reserved.
 		</span>
         </section>
     </div>
@@ -492,29 +492,29 @@
         </main>
     </div>
 
-    <!-- sign up Modal -->
-    <div class="modal fade signup-modal" id="newsletterModal">
-        <div class="modal-dialog modal-dialog-centered signup-modal-dialog">
-            <div class="modal-content signup-modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                <div class="modal-body">
-                    <div class="image">
-                        <img src="{% static "/app/assets/images/notification.png" %}" alt="">
-                    </div>
-                    <h3>Subscribe to our newsletter</h3>
-                    <p>First 100 subscribers get free access to the 1630 - The Thirty Years’ War closed beta tests</p>
-                    <form action="" method="post">
-                        {% csrf_token %}
-                        <div class="form-group">
-                            <input name="email" type="email" class="form-control" placeholder="Your Email"/>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+{#    <!-- sign up Modal -->#}
+{#    <div class="modal fade signup-modal" id="newsletterModal">#}
+{#        <div class="modal-dialog modal-dialog-centered signup-modal-dialog">#}
+{#            <div class="modal-content signup-modal-content">#}
+{#                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>#}
+{#                <div class="modal-body">#}
+{#                    <div class="image">#}
+{#                        <img src="{% static "/app/assets/images/notification.png" %}" alt="">#}
+{#                    </div>#}
+{#                    <h3>Subscribe to our newsletter</h3>#}
+{#                    <p>First 100 subscribers get free access to the 1630 - The Thirty Years’ War closed beta tests</p>#}
+{#                    <form action="" method="post">#}
+{#                        {% csrf_token %}#}
+{#                        <div class="form-group">#}
+{#                            <input name="email" type="email" class="form-control" placeholder="Your Email"/>#}
+{#                        </div>#}
+{#                        <div>#}
+{#                            <button type="submit" class="btn btn-primary">Subscribe</button>#}
+{#                        </div>#}
+{#                    </form>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
 
 {% endblock %}
