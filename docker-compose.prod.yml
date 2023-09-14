@@ -13,34 +13,6 @@ x-django-build: &django-build
     dockerfile: ./Dockerfile.prod
 
 services:
-  celery:
-    <<: *django-build
-    container_name: game_1630-cc01
-    restart: unless-stopped
-    command: bash -c "celery -A game_1630 worker -l info"
-    depends_on:
-      - django
-      - redis
-    env_file:
-      - .env
-    volumes:
-      - .:/code/
-    <<: *common
-
-  celery-beat:
-    <<: *django-build
-    container_name: game_1630-cb01
-    restart: unless-stopped
-    command: bash -c "celery -A game_1630 worker -l info --beat --scheduler django_celery_beat.schedulers:DatabaseScheduler"
-    depends_on:
-      - django
-      - redis
-    env_file:
-      - .env
-    volumes:
-      - .:/code/
-    <<: *common
-
   certbot:
     image: certbot/certbot
     volumes:
@@ -49,7 +21,9 @@ services:
     entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
 
   django:
-    <<: *django-build
+    build:
+      context: .
+      dockerfile: ./Dockerfile.prod
     container_name: game_1630-dc01
     restart: unless-stopped
     command: gunicorn config.wsgi:application --bind 0.0.0.0:8000 --workers 4
