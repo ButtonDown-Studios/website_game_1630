@@ -35,13 +35,13 @@
     <div class="banner">
         <div class="nav-bar">
             <div class="logo">
-                <img src="/app/assets/svgs/logo.svg" alt=""/>
+                <img src="app/assets/svgs/logo.svg" alt=""/>
             </div>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#faction">Factions</a></li>
                 <li><a href="#media">Media</a></li>
-                <li><a href="#pressKit">Press Kit</a></li>
+                <li><a href="#">Press Kit</a></li>
             </ul>
             <span></span>
         </div>
@@ -63,43 +63,8 @@
                 </svg>
                 Watch Trailer
             </a>
-            {#                <form action="" method="post">#}
-            {#                    {% csrf_token %}#}
-            {#                    <div class="form-group">#}
-            {#                        <label>#}
-            {#                            <input name="email" type="email" class="form-control"  {# noqa #}
-            {#                                   placeholder="Sign up with Email to Receive Updates and Freebies"/>#}
-            {#                        </label>#}
-            {#                    </div>#}
-            {#                    <div>#}
-            {#                        <button type="submit" class="btn btn-primary">Sign Me Up!</button>#}
-            {#                    </div>#}
-            {#                </form>#}
         </div>
     </div>
-    {#        <section class="kick-starter" id="kickStarter">#}
-    {#            <span><img class="img-fluid" src="/app/assets/svgs/kick-starter.svg"#}
-    {#                       alt="Kickstarter"/></span>#}
-    {#            <div class="coming-soon-svg">#}
-    {#                <img src="app/assets/svgs/coming-soon.svg" alt="coming-soon">#}
-    {#            </div>#}
-    {#            <div class="video-wrapper">#}
-    {#                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dXa-clQIS_A"></iframe>#}
-    {#            </div>#}
-    {#            <p>#}
-    {#                We're a small indie studio and need your help to bring our passion project to life. Kickstarter will allow us to overcome the final hurdle and share our game with the world.#}
-    {#                <span>#}
-    {#                    We have been funding the project out of our own pocket for some time, and it is becoming increasingly difficult for us to keep up#}
-    {#				with the expenses.#}
-    {#                </span>#}
-    {#                <span>#}
-    {#                    We are moving towards Kickstarter because we believe that with the help of the Backer Community; we can ensure the game is released in the best possible state.#}
-    {#                </span>#}
-    {#            </p>#}
-    {#            <a href="{{ kickstarter_link }}" target="_blank" class="btn btn-primary">#}
-    {#                Kickstarter page#}
-    {#            </a>#}
-    {#        </section>#}
     <section class="about-game" id="about">
         <h2>About Game</h2>
         <p>
@@ -126,20 +91,18 @@
             </div>
             <div class="col-md-6">
                 <div class="image">
-                    {#                        <a href="app/assets/images/about_game/set-in-17th-century.png" target="_blank">#}
                     <img src="app/assets/images/about_game/set-in-17th-century.png"
                          alt="17th Century Europe" class="img-fluid"/>
-                    {#                        </a>#}
                 </div>
             </div>
         </div>
         <div class="row story order-two">
             <div class="col-md-6">
                 <div class="image">
-                    {#<a href="app/assets/images/about_game/follow-captivating-story.png">#}
-                    <img src="app/assets/images/about_game/follow-captivating-story.png"
-                         alt="17th Century Europe" class="img-fluid"/>
-                    {#</a>#}
+                    <a href="app/assets/images/about_game/follow-captivating-story.png">
+                        <img src="app/assets/images/about_game/follow-captivating-story.png"
+                             alt="17th Century Europe" class="img-fluid"/>
+                    </a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -161,20 +124,20 @@
             </div>
             <div class="col-md-6">
                 <div class="image">
-                    {#                        <a href="app/assets/images/about_game/engage-in.png" target="_blank">#}
-                    <img src="app/assets/images/about_game/engage-in.png"
-                         alt="17th Century Europe" class="img-fluid"/>
-                    {#                        </a>#}
+                    <a href="app/assets/images/about_game/engage-in.png" target="_blank">
+                        <img src="app/assets/images/about_game/engage-in.png"
+                             alt="17th Century Europe" class="img-fluid"/>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="row story order-two">
             <div class="col-md-6">
                 <div class="image">
-                    {#                        <a href="app/assets/images/about_game/manage-supplies.png" target="_blank">#}
-                    <img src="app/assets/images/about_game/manage-supplies.png"
-                         alt="17th Century Europe" class="img-fluid"/>
-                    {#                        </a>#}
+                    <a href="app/assets/images/about_game/manage-supplies.png" target="_blank">
+                        <img src="app/assets/images/about_game/manage-supplies.png"
+                             alt="17th Century Europe" class="img-fluid"/>
+                    </a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -193,10 +156,10 @@
         </p>
         <div class="faction-card-wrapper">
             <div class="faction-img">
-                <img class="img-fluid" src="/app/assets/svgs/yellow-faction.svg" alt="">
+                <img class="img-fluid" src="app/assets/svgs/yellow-faction.svg" alt="">
             </div>
             <div class="faction-img">
-                <img class="img-fluid" src="/app/assets/svgs/blue-faction.svg" alt="">
+                <img class="img-fluid" src="app/assets/svgs/blue-faction.svg" alt="">
             </div>
         </div>
     </section>
@@ -205,44 +168,44 @@
         <div class="images-wrapper">
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="0" href="">
-                    <img src="/app/assets/screenshots/ss1-low.png" alt="">
+                    <img src="app/assets/screenshots/ss1-low.png" alt="">
                 </a>
             </div>
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="1" href="">
-                    <img src="/app/assets/screenshots/ss2-low.png" alt="">
+                    <img src="app/assets/screenshots/ss2-low.png" alt="">
                 </a>
             </div>
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="2" href="">
-                    <img src="/app/assets/screenshots/ss3-low.png" alt="">
+                    <img src="app/assets/screenshots/ss3-low.png" alt="">
                 </a>
             </div>
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="3" href="">
-                    <img src="/app/assets/screenshots/ss4-low.png" alt="">
+                    <img src="app/assets/screenshots/ss4-low.png" alt="">
                 </a>
             </div>
         </div>
         <div class="images-wrapper">
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="4" href="">
-                    <img src="/app/assets/screenshots/ss5-low.png" alt="">
+                    <img src="app/assets/screenshots/ss5-low.png" alt="">
                 </a>
             </div>
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="5" href="">
-                    <img src="/app/assets/screenshots/ss6-low.png" alt="">
+                    <img src="app/assets/screenshots/ss6-low.png" alt="">
                 </a>
             </div>
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="6" href="">
-                    <img src="/app/assets/screenshots/ss7-low.png" alt="">
+                    <img src="app/assets/screenshots/ss7-low.png" alt="">
                 </a>
             </div>
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#screenshot-carousel-modal" data-bs-slide-to="7" href="">
-                    <img src="/app/assets/screenshots/ss8-low.png" alt="">
+                    <img src="app/assets/screenshots/ss8-low.png" alt="">
                 </a>
             </div>
         </div>
@@ -252,44 +215,44 @@
         <div class="images-wrapper">
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="0" href="">
-                    <img src="/app/assets/artworks/aa1-low.png" alt="">
+                    <img src="app/assets/artworks/aa1-low.png" alt="">
                 </a>
             </div>
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="1" href="">
-                    <img src="/app/assets/artworks/aa2-low.png" alt="">
+                    <img src="app/assets/artworks/aa2-low.png" alt="">
                 </a>
             </div>
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="2" href="">
-                    <img src="/app/assets/artworks/aa3-low.png" alt="">
+                    <img src="app/assets/artworks/aa3-low.png" alt="">
                 </a>
             </div>
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="3" href="">
-                    <img src="/app/assets/artworks/aa4-low.png" alt="">
+                    <img src="app/assets/artworks/aa4-low.png" alt="">
                 </a>
             </div>
         </div>
         <div class="images-wrapper">
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="4" href="">
-                    <img src="/app/assets/artworks/aa5-low.png" alt="">
+                    <img src="app/assets/artworks/aa5-low.png" alt="">
                 </a>
             </div>
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="5" href="">
-                    <img src="/app/assets/artworks/aa6-low.png" alt="">
+                    <img src="app/assets/artworks/aa6-low.png" alt="">
                 </a>
             </div>
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="6" href="">
-                    <img src="/app/assets/artworks/aa7-low.png" alt="">
+                    <img src="app/assets/artworks/aa7-low.png" alt="">
                 </a>
             </div>
             <div class="image">
                 <a data-bs-toggle="modal" data-bs-target="#artwork-carousel-modal" data-bs-slide-to="7" href="">
-                    <img width="179px" src="/app/assets/artworks/aa8-low.png" alt="">
+                    <img width="179px" src="app/assets/artworks/aa8-low.png" alt="">
                 </a>
             </div>
         </div>
@@ -324,71 +287,15 @@
             </div>
         </div>
     </section>
-    <section class="newsletter">
-        <h3>Newsletter</h3>
-        <p>First 100 subscribers get free access to the 1630 - The Thirty Years’ War closed beta tests.</p>
-        <form action="" method="post">
-            {% csrf_token %}
-            <div class="form-group">
-                {#                    <label>#}
-                <input name="email" type="email" class="form-control" placeholder="Email address"/>
-                {#                    </label>#}
-            </div>
-            <div>
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-            </div>
-        </form>
-    </section>
-    <section class="pressKit" id="pressKit">
-        <h3>Press Kit</h3>
-        <div class="text-center">
-            <a href="{{ press_kit_link }}" target="_blank">
-                <button type="submit" class="btn btn-primary">{{ press_kit_button_text }}</button>
-            </a>
-        </div>
-    </section>
+
+
     <section class="join-cummunity">
-        {#            <h4>JOIN THE COMMUNITY</h4>#}
-        {#            <h5>contactus@buttondownstudios.com</h5>#}
-        {#            <ul>#}
-        {#                <li>#}
-        {#                    <a href="{{ facebook_1630_link }}" target="_blank">#}
-        {#                        <img src="/app/assets/svgs/fb.svg" alt="">#}
-        {#                    </a>#}
-        {#                </li>#}
-        {#                <li>#}
-        {#                    <a href="{{ tiktok_1630_link }}" target="_blank">#}
-        {#                        <img src="/app/assets/svgs/tiktok.svg" alt="">#}
-        {#                    </a>#}
-        {#                </li>#}
-        {#                <li>#}
-        {#                    <a href="{{ discord_1630_link }}" target="_blank">#}
-        {#                        <img src="/app/assets/svgs/discord.svg" alt="">#}
-        {#                    </a>#}
-        {#                </li>#}
-        {#                <li>#}
-        {#                    <a href="{{ instagram_1630_link }}" target="_blank">#}
-        {#                        <img src="/app/assets/svgs/instagram.svg" alt="">#}
-        {#                    </a>#}
-        {#                </li>#}
-        {#                <li>#}
-        {#                    <a href="{{ youtube_1630_link }}" target="_blank">#}
-        {#                        <img src="/app/assets/svgs/youtube.svg" alt="">#}
-        {#                    </a>#}
-        {#                </li>#}
-        {#                <li>#}
-        {#                    <a href="{{ twitter_1630_link }}" target="_blank">#}
-        {#                        <img src="/app/assets/svgs/twitter.svg" alt="">#}
-        {#                    </a>#}
-        {#                </li>#}
-        {#            </ul>#}
         <span>
 			Copyright © 2023 Conquista Games UG. Financially supported by the FFF Bayern & BMVI. All rights reserved.
 		</span>
     </section>
 </div>
 
-{# screenshots carousel #}
 <div class="container-fluid">
     <main class="row">
         <!-- Modal -->
@@ -401,35 +308,35 @@
                          data-bs-interval="false">
                         <div class="carousel-inner">
                             <div class="carousel-item active carousel-image">
-                                <img src="/app/assets/screenshots/ss1.png"
+                                <img src="app/assets/screenshots/ss1.png"
                                      alt="">
                             </div>
                             <div class="carousel-item carousel-image">
-                                <img src="/app/assets/screenshots/ss2.png"
+                                <img src="app/assets/screenshots/ss2.png"
                                      alt="...">
                             </div>
                             <div class="carousel-item carousel-image">
-                                <img src="/app/assets/screenshots/ss3.png"
+                                <img src="app/assets/screenshots/ss3.png"
                                      alt="...">
                             </div>
                             <div class="carousel-item carousel-image">
-                                <img src="/app/assets/screenshots/ss4.png"
+                                <img src="app/assets/screenshots/ss4.png"
                                      alt="...">
                             </div>
                             <div class="carousel-item carousel-image">
-                                <img src="/app/assets/screenshots/ss5.png"
+                                <img src="app/assets/screenshots/ss5.png"
                                      class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item carousel-image">
-                                <img src="/app/assets/screenshots/ss6.png"
+                                <img src="app/assets/screenshots/ss6.png"
                                      class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item carousel-image">
-                                <img src="/app/assets/screenshots/ss7.png"
+                                <img src="app/assets/screenshots/ss7.png"
                                      class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item carousel-image">
-                                <img src="/app/assets/screenshots/ss8.png"
+                                <img src="app/assets/screenshots/ss8.png"
                                      class="d-block w-100" alt="...">
                             </div>
                         </div>
@@ -450,7 +357,6 @@
     </main>
 </div>
 
-{# artwork carousel #}
 <div class="container-fluid">
     <main class="row">
         <!-- Modal -->
@@ -462,35 +368,35 @@
                          data-bs-interval="false">
                         <div class="carousel-inner">
                             <div class="carousel-item active carousel-image">
-                                <img src="/app/assets/artworks/aa1.png"
+                                <img src="app/assets/artworks/aa1.png"
                                      alt="">
                             </div>
                             <div class="carousel-item carousel-image">
-                                <img src="/app/assets/artworks/aa2.png"
+                                <img src="app/assets/artworks/aa2.png"
                                      alt="...">
                             </div>
                             <div class="carousel-item carousel-image">
-                                <img src="/app/assets/artworks/aa3.png"
+                                <img src="app/assets/artworks/aa3.png"
                                      alt="...">
                             </div>
                             <div class="carousel-item carousel-image">
-                                <img src="/app/assets/artworks/aa4.png"
+                                <img src="app/assets/artworks/aa4.png"
                                      alt="...">
                             </div>
                             <div class="carousel-item carousel-image">
-                                <img src="/app/assets/artworks/aa5.png"
+                                <img src="app/assets/artworks/aa5.png"
                                      class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item carousel-image">
-                                <img src="/app/assets/artworks/aa6.png"
+                                <img src="app/assets/artworks/aa6.png"
                                      class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item carousel-image">
-                                <img src="/app/assets/artworks/aa7.png"
+                                <img src="app/assets/artworks/aa7.png"
                                      class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item carousel-image">
-                                <img src="/app/assets/artworks/aa8.png"
+                                <img src="app/assets/artworks/aa8.png"
                                      class="d-block w-100" alt="...">
                             </div>
                         </div>
